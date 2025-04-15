@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carnet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Datos del paciente</h2>
+    <p><strong>Nombre:</strong> {{ datos[1] }}</p>
+    <p><strong>Fecha:</strong> {{ datos[2] }}</p>
+    <p><strong>Médico:</strong> {{ datos[3] }}</p>
+    <img src="/qr/{{ datos[1] }}" alt="Código QR"><br><br>
+    <a href="/">Volver al formulario</a>
+</body>
+</html>

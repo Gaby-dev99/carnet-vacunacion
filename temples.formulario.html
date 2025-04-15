@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carnet de Vacunación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Registrar Vacunación</h2>
+    <form action="/guardar" method="post">
+        <label>Nombre del paciente:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Fecha de vacunación (dd/mm/aaaa):</label><br>
+        <input type="text" name="fecha" required><br><br>
+
+        <label>Médico:</label><br>
+        <input type="text" value="{{ medico }}" readonly><br><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
